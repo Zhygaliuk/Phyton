@@ -14,9 +14,9 @@ class DeviceManager:
                 out.append(i)
         return out
 
-    def search_by_price(self, price):
+    def search_by_price_greater_than(self, price):
         out = list()
         for i in self.__device:
-            if i.get_price() == price:
+            if i.get_price() > price:
                 out.append(i)
         return out

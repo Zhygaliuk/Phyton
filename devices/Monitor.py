@@ -14,10 +14,10 @@ class Monitor(Device):
 
     def __str__(self):
         return f"name: {self._name}\n" \
-               f"price: {self._price}\n" \
-               f"producer: {self._producer}\n" \
+               f"materials:{self._materials}\n" \
                f"brand: {self._brand}\n" \
-               f"materials:{self._materials}\n"\
+               f"producer: {self._producer}\n" \
+               f"price: {self._price}\n" \
                f"layout:{self._size}\n"\
 
 
