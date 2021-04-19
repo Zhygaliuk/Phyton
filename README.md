@@ -1,3 +1,5 @@
+LAB_4
+
 Creating Python tests to cover at least 70% of code from Lab3 Lab3 link
 
 Rules: Лабораторне завдання складається з трьох частин:
