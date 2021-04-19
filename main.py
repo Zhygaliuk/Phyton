@@ -4,8 +4,8 @@ from manager import *
 
 def main():
     a = Keyboard("A-1", "plastic", "Logitech", "China", 200, "Ukraine")
-    b = Monitor("B-2", "plastic", "HyperX", "English", 150, "Ukraine")
-    d = Monitor("B-3", "iron", "HyperX", "China", 170, "Ukraine")
+    b = Monitor("B-2", "plastic", "HyperX", "English", 150, 16)
+    d = Monitor("B-3", "iron", "HyperX", "China", 170, 9)
 
     objects = [a, b, d]
     manager_object = DeviceManager(objects)
@@ -20,7 +20,7 @@ def main():
     for i in out2:
         print(i)
 
-    out3 = manager_object.search_by_price(200)
+    out3 = manager_object.search_by_price_greater_than(150)
     print("search by price\n")
     for i in out3:
         print(i)
